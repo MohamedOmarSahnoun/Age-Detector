@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Prediction</title>
+</head>
+<body>
+    <h1 style="margin-bottom: 0; text-align: center; font-size: large; color: #0a17ae; font-weight: bold; font-size: 100px;">Let AI guess your Age!</h1>
+    <div style="margin-top: 0; margin-left: 35%; margin-right: 35%;padding: 20px 20px; background-color: rgba(255, 235, 204, 0.4);">
+    <form method="post" enctype = "multipart/form-data" action="#" style="text-align: left; font-size: 30px; font-weight: bold;">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type = 'submit'>Show predicted age</button>
+    </form>  
+    </div>  
+</body>
+</html>
